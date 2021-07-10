@@ -1,0 +1,107 @@
+@keyframes bouncing {
+    0%{
+        background-color: darkblue;
+        transform: scale(1,1);
+        top: 0px;
+        left: 0px;
+    }
+    20%{
+        background-color: lightblue;
+        transform: scale(1.1);
+        top: 400px;
+
+    }
+    40%{
+        background-color: pink;
+        transform: scale(1,1);
+        top: 0px;
+
+    }
+    60%{
+        background-color: violet;
+        transform: scale(1,1);
+        top: 400px;
+
+    }
+    80%{
+        background-color: magenta;
+        transform: scale(1,1);
+        top: 0px;
+
+    }
+    100%{
+        background-color: red;
+        transform: scale(1,1);
+        top: 400px;
+        left: 600px;
+    }
+}
+
+
+.field{
+    width: 700px;
+    height: 700px;
+    background-color: cyan;
+}
+.ball-1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    background-color: blue;
+    animation: bouncing 3s linear 0.12s 3 alternate ;
+}
+
+.ball-2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: blue;
+    animation: bouncing 5s linear 0.12s 3 alternate ;
+}
+.ball-3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    background-color: blue;
+    animation: bouncing 7s linear 0.12s 3 alternate ;
+}
+.ball-4{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    background-color: blue;
+    animation: bouncing 9s linear 0.12s 3 alternate ;
+}
+.ball-5{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: blue;
+    animation: bouncing 11s ease-in 0.12s infinite alternate ;
+}
+.flex-container{
+
+    width: 500px;
+    height: 500px;
+    background-color: yellowgreen;
+    border: 5px solid black;
+    margin-top: 10px;
+}
+
+.text{
+
+font-size: 0px;
+transition: font-size 0.5s linear;
+transiti
+}
+
+.flex-container:hover .text{
+
+   font-size: 30px; 
+
+}
